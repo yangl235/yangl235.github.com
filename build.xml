@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project name="Javascript compress project" basedir="C:\MyCode\GameDesign\cocos\CocosDev\chapter8" default="compile">
+<project name="Javascript compress project" basedir="C:\MyCode\GameDesign\cocos\CocosDev\chapter16" default="compile">
 
     <taskdef name="jscomp" classname="com.google.javascript.jscomp.ant.CompileTask"
              classpath="C:\BasicSoftWare\cocos2d-x\cocos2d-x-3.16\cocos2d-x-3.16\tools\cocos2d-console\plugins\plugin_compile\build_web/bin/compiler-1.7.jar"/>
@@ -8,11 +8,11 @@
         <jscomp compilationLevel="simple" 
                 warning="quiet"
                 debug="false" 
-                output="C:\MyCode\GameDesign\cocos\CocosDev\chapter8\publish\html5/game.min.js"
+                output="C:\MyCode\GameDesign\cocos\CocosDev\chapter16\publish\html5/game.min.js"
                 languagein="ECMASCRIPT5"
                 
                 >
-            <sources dir="C:\MyCode\GameDesign\cocos\CocosDev\chapter8\frameworks\cocos2d-html5">
+            <sources dir="C:\MyCode\GameDesign\cocos\CocosDev\chapter16\frameworks\cocos2d-html5">
                 <file name="CCBoot.js"/>
                 <file name="cocos2d/core/event-manager/CCEventHelper.js"/>
                 <file name="CCDebugger.js"/>
@@ -167,15 +167,26 @@
                 <file name="cocos2d/parallax/CCParallaxNode.js"/>
                 <file name="cocos2d/parallax/CCParallaxNodeRenderCmd.js"/>
                 <file name="cocos2d/audio/CCAudio.js"/>
+                <file name="extensions/ccpool/CCPool.js"/>
 
             </sources>
             <sources dir="${basedir}">
                 <file name="src/resource.js"/>
-                <file name="src/app.js"/>
-                <file name="src/Constant.js"/>
-                <file name="src/Storage.js"/>
-                <file name="src/GameUI.js"/>
-                <file name="src/Candy.js"/>
+                <file name="src/Sound.js"/>
+                <file name="src/GameConstants.js"/>
+                <file name="src/elements/GameBackground.js"/>
+                <file name="src/elements/Hero.js"/>
+                <file name="src/elements/Item.js"/>
+                <file name="src/elements/Obstacle.js"/>
+                <file name="src/logic/FoodManager.js"/>
+                <file name="src/logic/ObstacleManager.js"/>
+                <file name="src/ui/SoundButton.js"/>
+                <file name="src/ui/GameSceneUI.js"/>
+                <file name="src/ui/GameOverUI.js"/>
+                <file name="src/scene/MenuScene.js"/>
+                <file name="src/scene/AboutScene.js"/>
+                <file name="src/scene/GameScene.js"/>
+                <file name="src/Game.js"/>
                 <file name="main.js"/>
 
             </sources>
